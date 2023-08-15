@@ -1,0 +1,26 @@
+footer {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 998;
+    font-size: 0.8rem;
+    padding: 1rem 1rem;
+    margin-top: 3rem;
+    border-top: 4px solid;
+  }
+  
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1px auto;
+    grid-gap: 1rem;
+  }
+  
+  .footer-section {
+    min-height: auto;
+    max-height: none;
+  }

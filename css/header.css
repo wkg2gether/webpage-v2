@@ -66,7 +66,7 @@
     margin-right: 0.625rem;
   }
 
-  button {
+  .header-button {
     margin-right: 0.625rem;
     background: transparent;
     border-radius: 0.3rem;
@@ -83,7 +83,7 @@
     transition: 0.3s;
   }
 
-  button:hover{
+  .header-button:hover{
     background-color: #d4a35a;
     color: black;
     opacity: 1;

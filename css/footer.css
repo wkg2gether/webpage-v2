@@ -60,3 +60,11 @@ footer {
     font-size: 1.2rem;
     font-weight: 400;
   }
+
+  .footer-section .company-name {
+    font-family: "Barlow";
+  }
+
+  .footer-section .company-description {
+    font-family: "Open Sans";
+  }

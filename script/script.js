@@ -25,11 +25,21 @@ $(document).ready(function() {
     var imageOffset = $(".background-img").offset().top;
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
-      if(scroll <= imageOffset) {
+      if(scroll < imageOffset + 50) {
       $(".background-img").css({
-        zoom: (scroll + imageOffset) / 1000,
-        transition: "opacity 0.3s ease-in-out"
+        zoom: (scroll + imageOffset) / 1500,
+        transition: "opacity 0.7s ease-in-out "
       });
     }
+    });
+  });
+
+  $(document).ready(function() {
+    $(".company-name").click(function() {
+      $("html, body").animate({
+        scrollTop: 0
+      }, {
+        duration: 1500
+        });
     });
   });

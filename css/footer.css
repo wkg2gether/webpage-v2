@@ -7,8 +7,8 @@ footer {
     left: 0;
     z-index: 998;
     font-size: 0.8rem;
-    padding: 6rem 2rem;
-    margin-top: 15rem;
+    padding: 7rem 2rem;
+    margin-top: 4.5rem;
   }
   
   .footer-wrapper {
@@ -23,7 +23,13 @@ footer {
     max-height: none;
   }
 
+  #buttons {
+    margin-left: 11rem;
+  }
 
+  #social {
+    margin-left: 13rem;
+  }
 
   .href-buttons button {
     background-color: #83B7EE;
@@ -63,8 +69,40 @@ footer {
 
   .footer-section .company-name {
     font-family: "Barlow";
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    cursor: pointer;
   }
 
   .footer-section .company-description {
     font-family: "Open Sans";
+    color: #808080;
+    font-size: 1.1rem;
+  }
+
+  .footer-section p {
+    font-size: 1.1rem;
+    color: #808080;
+  }
+
+  .footer-section i {
+    font-size: 1.5rem;
+    color: #808080;
+    margin-right: 0.5rem;
+    font-weight: 700;
+  }
+
+  .footer-section span {
+    font-size: 0.9rem;
+    color: #808080;
+    font-family: "Open Sans";
+    font-weight: 500;
+  }
+
+  .footer-section .footer-logo {
+    width: 12%;
+    height: auto;
+    
   }

@@ -2,10 +2,16 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
  body {
-     margin: 0;
-     font-family: "Barlow";
-     background-color: #141416;
+    margin: 0;
+    font-family: "Barlow";
+    background-color: #141416;
 }
+
+.page-wrapper {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; 
+  }
+
  .header-section {
      position: relative;
      display: flex;

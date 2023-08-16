@@ -1,4 +1,18 @@
 $(document).ready(function() {
+    $(".page-wrapper").css("opacity", 1);
+});
+
+$(document).ready(function() {
+    $("a").click(function(e) {
+      e.preventDefault(); 
+      $(".page-wrapper").css("opacity", 0);
+      setTimeout(function() {
+        window.location.href = $(e.target).attr("href");
+      }, 300); 
+    });
+  });
+
+$(document).ready(function() {
   var scroll = $(window).scrollTop();
 
   $(window).scroll(function() {

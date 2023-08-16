@@ -52,7 +52,7 @@
 }
  .subpage-item:hover{
      color: #729fce;
-     transition: color 0.1s ease-out;
+     transition: color 0.4s ease-out;
      transform: inherit;
      opacity: 1;
      text-decoration: none;

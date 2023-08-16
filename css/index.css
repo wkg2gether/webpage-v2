@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
- body {
+body {
      margin: 0;
      font-family: "Barlow";
-     background: linear-gradient( to bottom, #1a1a1c 0%, #1a1a1c 40%, #141416 40%, #141416 100% ) 
+     background: linear-gradient( to bottom, #1a1a1c 0%, #1a1a1c 40%, #141416 40%, #141416 100% );
 }
+
+.page-wrapper {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; 
+  }
+
  .welcome {
      width: 70rem;
      height: 23rem;

@@ -17,6 +17,7 @@ $(document).ready(function() {
 
         if ((offsetTop <= (scrollTop + windowHeight)) && (elementBottom >= scrollTop)) {
           if (visibleElements.indexOf(element) === -1) {
+            element.css("opacity", "1");
             element.addClass("slide-in-left");
             visibleElements.push(element);
           }
@@ -37,6 +38,7 @@ $(document).ready(function() {
 
         if ((offsetTop <= (scrollTop + windowHeight)) && (elementBottom >= scrollTop)) {
           if (visibleElements.indexOf(element) === -1) {
+            element.css("opacity", "1");
             element.addClass("slide-in-bottom");
             visibleElements.push(element);
           }

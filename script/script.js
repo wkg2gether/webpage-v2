@@ -21,7 +21,28 @@ $(document).ready(function() {
     });
   });
 
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var newScroll = $(window).scrollTop();
+    $(".story-title").css({
+      "background-position-x": newScroll / 25 + "%",
+      transition: "background-position-x ease-in"
+    });
+
+    $(".leadership-title").css({
+      "background-position-x": newScroll / 25 + "%",
+      transition: "background-position-x ease-in"
+    });
+
+    $(".header-img").css({
+      transform: "scale(" + (1 + newScroll / 1000) + ", 1)",
+      transition: "transform 0.5 ease-in"
+    });
+  });
+});
+
   $(document).ready(function() {
+    if(window.location.pathname.split("/").pop() == "index.html") {
     var imageOffset = $(".background-img").offset().top;
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
@@ -32,14 +53,19 @@ $(document).ready(function() {
       });
     }
     });
+  }
   });
 
   $(document).ready(function() {
     $(".company-name").click(function() {
+      if(window.location.pathname.split("/").pop() != "index.html") {
+        window.location.href = "index.html";
+      } else {
       $("html, body").animate({
         scrollTop: 0
       }, {
         duration: 1500
         });
+      }
     });
   });

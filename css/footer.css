@@ -8,8 +8,8 @@ footer {
     z-index: 998;
     font-size: 0.8rem;
     padding: 7rem 2rem;
-    margin-top: 4.5rem;
-  }
+    background-color: #141416;
+    }
   
   .footer-wrapper {
     display: grid;
@@ -103,6 +103,5 @@ footer {
 
   .footer-section .footer-logo {
     width: 12%;
-    height: auto;
-    
+    height: auto;    
   }

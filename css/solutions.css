@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
+ body {
+    margin: 0;
+    font-family: "Barlow";
+    background-color: #141416;
+}
+
+.page-wrapper {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; 
+  }
+
+ .business {
+     background-image: url(../img/solutions-background.png);
+     background-size: cover;
+     padding: 3rem 1.25px;
+}
+ .business h2{
+     color: white;
+     margin-top: 8rem;
+     margin-left: 4rem;
+     font-family: "Poppins";
+     font-size: 4rem;
+     font-weight: bold;
+}
+ .business p {
+     font-size: 2rem;
+}
+ table, td, tr {
+     margin-top: 0.3rem;
+     margin-left: 6rem;
+     border-color: rgb(255, 255, 255);
+     border: 1px solid;
+     height: 10rem;
+}
+ .software img {
+     background-color: #d4a35a;
+     border-radius: 15px;
+     padding: 1.5rem;
+     width: 30%;
+     margin-left: 35% 
+}
+ .data-management img {
+     background-color: #83b7ee;
+     border-radius: 15px;
+     padding: 1.5rem;
+     width: 30%;
+     margin-left: 35% 
+}
+ .support img {
+     background-color: #83b7ee;
+     border-radius: 15px;
+     padding: 1.5rem;
+     width: 30%;
+     margin-left: 35% 
+}
+ .custom-app img {
+     background-color: #d4a35a;
+     border-radius: 15px;
+     padding: 1.5rem;
+     width: 30%;
+     margin-left: 35% 
+}
+ .software-description h2 {
+     font-family: "Poppins";
+     color: white;
+     font-weight: bold;
+     margin-left: 4rem;
+     margin-top: 3rem;
+     font-size: 1.3rem;
+}
+ .software-description p {
+     font-family: "Open Sans";
+     margin-left: 4rem;
+     margin-bottom: 4rem;
+     color: #8A8A8A;
+}
+ .software-description td {
+     width: 100%;
+}
+ .data-management h2 {
+     font-family: "Poppins";
+     color: white;
+     font-weight: bold;
+     margin-left: 4rem;
+     margin-top: 3rem;
+     font-size: 1.3rem;
+}
+ .data-management p {
+     font-family: "Open Sans";
+     margin-left: 4rem;
+     margin-bottom: 4rem;
+     color: #8A8A8A;
+}
+ .custom-app h2 {
+     font-family: "Poppins";
+     color: white;
+     font-weight: bold;
+     margin-left: 4rem;
+     margin-top: 3rem;
+     font-size: 1.3rem;
+}
+ .custom-app p {
+     font-family: "Open Sans";
+     margin-left: 4rem;
+     margin-bottom: 4rem;
+     color: #8A8A8A;
+}
+ .support h2 {
+     font-family: "Poppins";
+     color: white;
+     font-weight: bold;
+     margin-left: 4rem;
+     margin-top: 3rem;
+     font-size: 1.3rem;
+}
+ .support p {
+     font-family: "Open Sans";
+     margin-left: 4rem;
+     margin-bottom: 4rem;
+     color: #8A8A8A;
+}
+ .smaller {
+     width: 20%;
+}
+ 

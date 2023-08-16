@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
+ .header {
+     background-color: rgb(20, 20, 22);
+     color: white;
+     opacity: 1;
+     padding: 1.25rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     z-index: 9999;
+     transition: opacity 0.5s ease-in-out;
+}
+ .company-name {
+     font-weight: bold;
+}
+ .logo {
+     display: flex;
+     align-items: center;
+}
+ .logo img {
+     width: 3.7rem;
+     height: 2.7rem;
+     margin-right: 0.625rem;
+     margin-left: 0.625rem;
+}
+ .company-name {
+     font-size: 1.5rem;
+     cursor: default;
+}
+ .subpages {
+     display: flex;
+     position: absolute;
+     right: 0rem;
+     width: 37.5rem;
+     text-decoration: none;
+}
+ .subpage-item {
+     font-family: "Open Sans";
+     margin-right: 1.25rem;
+     font-size: 0.9rem;
+     text-decoration: none;
+     color: #8a8a98;
+     opacity: 1;
+     transition: 0.3s;
+}
+ .subpage-item:hover{
+     color: #729fce;
+     transition: color 0.4s ease-out;
+     transform: inherit;
+     opacity: 1;
+     text-decoration: none;
+}
+ .subpage-item:active{
+     color:#729fce;
+}
+ .subpage-item:last-child {
+     margin-right: 0.625rem;
+}
+ .header-button {
+     margin-right: 0.625rem;
+     background: transparent;
+     border-radius: 0.3rem;
+     border-color: rgb(255, 255, 255);
+     color: white;
+     size: 1.25rem;
+     padding: 0.5em 1.5em;
+     position: relative;
+     font-family: "Barlow";
+     font-weight: bold;
+     font-size: 0.90rem;
+     cursor: pointer;
+     opacity: 0.6;
+     transition: 0.3s;
+}
+ .header-button:hover{
+     background-color: #d4a35a;
+     color: black;
+     opacity: 1;
+}

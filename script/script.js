@@ -1,7 +1,10 @@
+//page fade-in animation
 $(document).ready(function() {
     $(".page-wrapper").css("opacity", 1);
 });
 
+
+//page fade-out animation
 $(document).ready(function() {
     $("a").click(function(e) {
       e.preventDefault(); 
@@ -12,40 +15,24 @@ $(document).ready(function() {
     });
   });
 
+//header fade-in and fade-out animation
 $(document).ready(function() {
   var scroll = $(window).scrollTop();
 
   $(window).scroll(function() {
-
-      if (window.location.pathname.split("/").pop() == "vision.html") {
-          var newScrollVision = $(window).scrollTop();
-          $(".story-title").css({
-              "background-position-x": newScrollVision / 25 + "%"
-          });
-
-          $(".leadership-title").css({
-              "background-position-x": newScrollVision / 25 + "%"
-          });
-
-          $(".header-img").css({
-              transform: "scale(" + (1 + newScrollVision / 1000) + ", 1)"
-          });
-      }
-
-
       var newScroll = $(window).scrollTop();
-
-      if (newScroll > scroll + 15) {
-          var opacity = Math.max(0, 1 - (newScroll - scroll) / 15);
+      if (newScroll > scroll + 10) {
+          var opacity = Math.max(0, 1 - (newScroll - scroll) / 10);
           $(".header").css("opacity", opacity);
-      } else if (newScroll < scroll - 15) {
-          var opacity = Math.min(1, 0.4 + (scroll - newScroll) / 15);
+      } else if (newScroll < scroll - 10) {
+          var opacity = Math.min(1, 0.4 + (scroll - newScroll) / 10);
           $(".header").css("opacity", opacity);
       }
       scroll = newScroll;
   });
 });
 
+//index image zoom in and out while scrolling
 $(document).ready(function() {
   if (window.location.pathname.split("/").pop() == "index.html") {
       var imageOffset = $(".background-img").offset().top;
@@ -61,6 +48,7 @@ $(document).ready(function() {
   }
 });
 
+//footer button (scroll to top or go to index.html)
 $(document).ready(function() {
   $(".company-name").click(function() {
       if (window.location.pathname.split("/").pop() != "index.html") {

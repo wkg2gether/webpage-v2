@@ -17,6 +17,7 @@
      background-size: cover;
      padding: 3rem 1.25px;
 }
+
  .business h2{
      color: white;
      margin-top: 8rem;
@@ -28,6 +29,7 @@
  .business p {
      font-size: 2rem;
 }
+
  table, td, tr {
      margin-top: 0.3rem;
      margin-left: 6rem;
@@ -35,35 +37,22 @@
      border: 1px solid;
      height: 10rem;
 }
- .software img {
-     background-color: #d4a35a;
+ .software img, .data-management img, .custom-app img, .support img {
      border-radius: 15px;
      padding: 1.5rem;
      width: 30%;
      margin-left: 35% 
 }
- .data-management img {
+
+ .data-management img, .support img {
      background-color: #83b7ee;
-     border-radius: 15px;
-     padding: 1.5rem;
-     width: 30%;
-     margin-left: 35% 
 }
- .support img {
-     background-color: #83b7ee;
-     border-radius: 15px;
-     padding: 1.5rem;
-     width: 30%;
-     margin-left: 35% 
-}
- .custom-app img {
+
+ .custom-app img, .software img {
      background-color: #d4a35a;
-     border-radius: 15px;
-     padding: 1.5rem;
-     width: 30%;
-     margin-left: 35% 
 }
- .software-description h2 {
+
+ .software-description h2, .data-management h2, .custom-app h2, .support h2{
      font-family: "Poppins";
      color: white;
      font-weight: bold;
@@ -71,58 +60,45 @@
      margin-top: 3rem;
      font-size: 1.3rem;
 }
- .software-description p {
+
+ .software-description p, .data-management p, .custom-app p, .support p {
      font-family: "Open Sans";
      margin-left: 4rem;
      margin-bottom: 4rem;
      color: #8A8A8A;
 }
+
  .software-description td {
      width: 100%;
 }
- .data-management h2 {
-     font-family: "Poppins";
-     color: white;
-     font-weight: bold;
-     margin-left: 4rem;
-     margin-top: 3rem;
-     font-size: 1.3rem;
-}
- .data-management p {
-     font-family: "Open Sans";
-     margin-left: 4rem;
-     margin-bottom: 4rem;
-     color: #8A8A8A;
-}
- .custom-app h2 {
-     font-family: "Poppins";
-     color: white;
-     font-weight: bold;
-     margin-left: 4rem;
-     margin-top: 3rem;
-     font-size: 1.3rem;
-}
- .custom-app p {
-     font-family: "Open Sans";
-     margin-left: 4rem;
-     margin-bottom: 4rem;
-     color: #8A8A8A;
-}
- .support h2 {
-     font-family: "Poppins";
-     color: white;
-     font-weight: bold;
-     margin-left: 4rem;
-     margin-top: 3rem;
-     font-size: 1.3rem;
-}
- .support p {
-     font-family: "Open Sans";
-     margin-left: 4rem;
-     margin-bottom: 4rem;
-     color: #8A8A8A;
-}
+
  .smaller {
      width: 20%;
 }
  
+.software-description, .management, .application-development, .customer-support {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide-in-left {
+    transform: translateX(-100%);
+    animation: slide-in 1.5s forwards; 
+  }
+
+  @keyframes slide-in {
+    to {
+      transform: translateX(0); 
+    }
+  }
+
+  .slide-in-bottom {
+    transform: translateY(40%);
+    animation: slide-in 1.5s forwards; 
+  }
+
+  @keyframes slide-in {
+    to {
+      transform: translateY(0); 
+    }
+  }

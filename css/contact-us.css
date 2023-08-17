@@ -11,21 +11,77 @@
      transition: opacity 0.8s ease-in-out;
 } */
  .startup {
-     background: url(../img/nnnnnnnnnnn.png);
+     background: url(../img/contact-us.png);
      background-size: cover;
-     padding: 4rem 0;
-     background-position-y: -90%;
+     padding: 7rem 0;
+     background-position-y: -50%;
      filter: saturate(130%);
      filter: grayscale(15%);
 }
  .startup h2 {
      color: white;
-     margin-top: 8rem;
+     margin-top: 6rem;
      margin-left: 4rem;
+     margin-bottom: 0rem;
      font-family: "Poppins";
-     font-size: 4rem;
+     font-size: 3rem;
      font-weight: bold;
+     margin-top: 3rem;
 }
  .startup p {
      font-size: 2rem;
+     margin-top: 0rem;
+}
+table, td, tr {
+    margin-top: 0.3rem;
+    margin-left: 6rem;
+    border-color: rgb(255, 255, 255);
+    border: 1px solid;
+    height: 10rem;
+}
+
+.smaller {
+    width: 30%;
+}
+
+.software p {
+    font-family: "Open Sans";
+    color: #8a8a8a;
+    font-size: 0.8rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 5rem;
+}
+
+form label {
+    font-family: "Open Sans";
+    color: #8a8a8a;
+    font-size: 0.8rem;
+}
+
+form input {
+    border: 1px #8a8a8a solid;
+    border-radius: 2px;
+    background-color: transparent;
+    width: 40%;
+    height: 2rem;
+}
+
+input:hover {
+    border: 1.5px #8a8a8a solid;
+}
+
+.label-form {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+form input label {
+    margin-left: 3rem;
 }

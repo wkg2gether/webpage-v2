@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
+ body {
+     margin: 0;
+     font-family: "Barlow";
+     background-color: #141416;
+}
+.page-wrapper {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+.header-title, .header-description {
+    color: white;
+    position: relative;
+    z-index: 3;
+    left: 4%;
+}
+
+.header-title {
+    margin-top: 10rem;
+    font-size: 3.7rem;
+    font-family: "Poppins";
+    font-weight: bolder;
+}
+
+.header-description {
+    font-size: 1.65rem;
+    font-family: "Open sans";
+}
+
+.table {
+    position: relative;
+    top: 20rem;
+    padding: 0 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+    background-color: inherit;
+    margin-bottom: 25rem;
+}
+
+.table-column {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2C2C2E;
+}
+
+.software-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.software-name, .software-duration, .software-price, .software-button, .divider {
+    color: #8A8A8A;
+    transform: translateX(3.2rem);
+}
+
+.software-name {
+    font-size: 1.3rem;
+    font-family: "Poppins";
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.software-duration {
+    font-size: 1rem;
+    font-family: "Open sans";
+    margin-bottom: 1rem;
+}
+
+.software-price {
+    font-size: 1rem;
+    font-family: "Open Sans";
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.software-button {
+    font-size: 1rem;
+    font-family: "Open Sans";
+    width: 24%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #83B7EE;
+    color: #141416;
+    margin-top: 0.8rem;
+    margin-bottom: 2.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.software-button:hover {
+    background-color: inherit;
+    color: #676768;
+    border: 1px solid #676768;
+    transition: 0.3s ease-in-out;
+}
+
+.divider {
+    content: "";
+    display: block;
+    width: 4rem; 
+    height: 1px; 
+    background-color: #383839;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}

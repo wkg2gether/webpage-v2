@@ -6,77 +6,63 @@
      font-family: "Barlow";
      background-color: #141416;
 }
- /* .page-wrapper {
+  /* .page-wrapper {
      opacity: 0;
      transition: opacity 0.8s ease-in-out;
-} */
+}  */
+
  .startup {
      background: url(../img/contact-us.png);
      background-size: cover;
      padding: 7rem 0;
-     background-position-y: -50%;
      filter: saturate(130%);
      filter: grayscale(15%);
 }
+
  .startup h2 {
      color: white;
      margin-top: 6rem;
      margin-left: 4rem;
      margin-bottom: 0rem;
      font-family: "Poppins";
-     font-size: 3rem;
+     font-size: 4rem;
      font-weight: bold;
      margin-top: 3rem;
 }
+
  .startup p {
      font-size: 2rem;
      margin-top: 0rem;
 }
-table, td, tr {
-    margin-top: 0.3rem;
-    margin-left: 8rem;
-    border-color: rgb(255, 255, 255);
-    border: 1px solid;
-    height: 10rem;
+
+table {
+    transform: translateY(-10%);
+    margin-left: 4rem;
+    background-color: #141416;
+    width: 93%;
 }
 
-.smaller {
-    width: 30%;
+table, td, tr {
+    border-color: rgb(255, 255, 255);
+    border: 1px solid;
 }
 
 .software p {
     font-family: "Open Sans";
     color: #8a8a8a;
     font-size: 1rem;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
-    margin-left: 9rem;
+    text-align: left;
+    transform: translateX(30%);
 }
 
 form {
-    margin-left: 10rem;
-}
-
-form label {
-    font-family: "Open Sans";
-    color: #8a8a8a;
-    font-size: 0.8rem;
-}
-
-form input {
-    border: 1px #8a8a8a solid;
-    border-radius: 2px;
-    background-color: transparent;
-    width: 40%;
-    height: 2rem;
-}
-
-input:hover {
-    border: 1.5px #8a8a8a solid;
-}
-
-.label-form {
     display: flex;
+    justify-content: space-between;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+    margin: 5rem auto;
 }
 
 .column {
@@ -84,8 +70,53 @@ input:hover {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    padding: 0.8rem;
+    max-width: calc(100% - 1rem);
 }
 
-form input label {
-    margin-left: 3rem;
+form label {
+    font-family: "Open Sans";
+    color: #8a8a8a;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"], form input[type="email"] {
+    border: 1px #8a8a8a solid;
+    border-radius: 6px;
+    background-color: transparent;
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+input:hover {
+    border: 1.5px #8a8a8a solid;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.8rem;
+}
+
+.button {
+    font-family: "Open Sans";
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    width: 520px;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #83B7EE;
+    color: #141416;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
 }

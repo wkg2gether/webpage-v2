@@ -29,10 +29,14 @@
      height: 2.7rem;
      margin-right: 0.625rem;
      margin-left: 0.625rem;
+     pointer-events: none;
 }
  .company-name {
      font-size: 1.5rem;
      cursor: default;
+     user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
  .subpages {
      display: flex;

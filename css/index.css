@@ -111,16 +111,15 @@
      box-sizing: border-box;
      margin-left: 3rem;
 }
+
  .text-block-1, .text-block-2, .text-block-3, .text-block-4 {
      margin-top: 16rem;
      background-color: #141416;
      color: white;
      width: 14%;
      height: 9%;
-     user-select: none;
-     -webkit-user-select: none;
-     -moz-user-select: none;
 }
+
  .text-block-1 {
      position: absolute;
      margin-left: 6rem;
@@ -137,18 +136,23 @@
      position: absolute;
      margin-left: 69rem;
 }
+
  h4 {
-     font-size: 23px;
+     font-size: 18px;
      font-weight: bold;
      margin-top: 0.8rem;
      margin-left: 1rem;
      font-family: "Barlow";
 }
+
  .text-block-1 p, .text-block-2 p, .text-block-3 p, .text-block-4 p {
      margin-left: 1rem;
      font-family: "Open Sans";
-     color: #4e4e52;
+     color: #858585;
+     font-size: 16px;
+     font-weight: 500;
 }
+
  .directions {
      background-color: #141416;
 }
@@ -169,11 +173,13 @@
      margin-right: 29rem;
      margin-top: 3rem;
 }
+
  .text-cards img {
      width: 180px;
      height: 200px;
      object-fit: cover;
 }
+
  .text-block-5, .text-block-6, .text-block-7 {
      width: 180px;
      height: 200px;
@@ -197,6 +203,7 @@
      font-size: 1.2rem;
      font-weight: bold;
 }
+
  .read-more {
      color: #898989;
      font-size: 1rem;
@@ -204,13 +211,14 @@
      margin-left: 29rem;
      margin-top: 1rem;
 }
- .text-cards .text-block-5, .text-cards img, .text-cards .text-block-6, .text-cards .text-block-7 {
+
+.text-block-5, .text-cards img, .text-block-6, .text-block-7 {
      transition: transform 0.3s ease;
      user-select: none;
      -webkit-user-select: none;
      -moz-user-select: none;
 }
- .text-cards .text-block-5:hover, .text-cards img:hover, .text-cards .text-block-6:hover, .text-cards .text-block-7:hover {
+.text-block-5:hover, .text-cards img:hover, .text-block-6:hover, .text-block-7:hover {
      transform: scale(1.1);
 }
  

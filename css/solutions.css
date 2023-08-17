@@ -39,6 +39,10 @@
      width: 30%;
      margin-left: 35%;
      opacity: 0;
+     pointer-events: none;
+     user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
  .data-management img, .support img {
      background-color: #83b7ee;

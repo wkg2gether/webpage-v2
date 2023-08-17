@@ -2,16 +2,14 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
  body {
-    margin: 0;
-    font-family: "Barlow";
-    background-color: #141416;
+     margin: 0;
+     font-family: "Barlow";
+     background-color: #141416;
 }
-
-.page-wrapper {
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out; 
-  }
-
+ .page-wrapper {
+     opacity: 0;
+     transition: opacity 0.8s ease-in-out;
+}
  .header-section {
      position: relative;
      display: flex;
@@ -26,34 +24,24 @@
      object-fit: cover;
      transition: "transform 0.5 ease-in" 
 }
- .header-title {
+ .header-title, .header-description {
      color: white;
      position: absolute;
      z-index: 3;
-     top: 22%;
      left: 4%;
+}
+ .header-title {
+     top: 22%;
      font-size: 3.7rem;
      font-family: "Poppins";
      font-weight: bolder;
 }
  .header-description {
-     color: white;
-     position: absolute;
-     z-index: 3;
      top: 28%;
-     left: 4%;
      font-size: 1.2rem;
      font-family: "Open sans";
 }
- .table-story {
-     position: relative;
-     top: -2%;
-     padding: 0 4.6rem;
-     display: flex;
-     z-index: 2;
-     background-color: inherit;
-}
- .table-leadership {
+ .table-story, .table-leadership {
      position: relative;
      top: -2%;
      padding: 0 4.6rem;
@@ -87,14 +75,6 @@
      margin-top: 10%;
      margin-left: 30%;
 }
- .story-title {
-     background-image: url("../img/vision-story-img.webp");
-     background-size: repeat;
-}
- .leadership-title {
-     background-image: url("../img/vision-lead-img.webp");
-     background-size: repeat;
-}
  .story-desc, .leadership-desc {
      flex: 4;
      padding: 1.5rem;
@@ -106,3 +86,12 @@
      font-size: 1rem;
      line-height: 1.8;
 }
+ .story-title {
+     background-image: url("../img/vision-story-img.webp");
+     background-size: repeat;
+}
+ .leadership-title {
+     background-image: url("../img/vision-lead-img.webp");
+     background-size: repeat;
+}
+ 

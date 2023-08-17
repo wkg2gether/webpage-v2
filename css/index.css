@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
-body {
+ body {
      margin: 0;
      font-family: "Barlow";
      background: linear-gradient( to bottom, #1a1a1c 0%, #1a1a1c 40%, #141416 40%, #141416 100% );
 }
-
-.page-wrapper {
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out; 
-  }
-
+ .page-wrapper {
+     opacity: 0;
+     transition: opacity 0.8s ease-in-out;
+}
  .welcome {
      width: 70rem;
      height: 23rem;
@@ -113,45 +111,31 @@ body {
      box-sizing: border-box;
      margin-left: 3rem;
 }
- .column .imageBox {
-     box-sizing: border-box;
-     margin-left: 3rem;
+ .text-block-1, .text-block-2, .text-block-3, .text-block-4 {
+     margin-top: 16rem;
+     background-color: #141416;
+     color: white;
+     width: 14%;
+     height: 9%;
+     user-select: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
 }
  .text-block-1 {
      position: absolute;
-     margin-top: 16rem;
      margin-left: 6rem;
-     background-color: #141416;
-     color: white;
-     width: 14%;
-     height: 9%;
 }
  .text-block-2 {
      position: absolute;
-     margin-top: 16rem;
      margin-left: 27rem;
-     background-color: #141416;
-     color: white;
-     width: 14%;
-     height: 9%;
 }
  .text-block-3 {
      position: absolute;
-     margin-top: 16rem;
      margin-left: 48rem;
-     background-color: #141416;
-     color: white;
-     width: 14%;
-     height: 9%;
 }
  .text-block-4 {
      position: absolute;
-     margin-top: 16rem;
      margin-left: 69rem;
-     background-color: #141416;
-     color: white;
-     width: 14%;
-     height: 9%;
 }
  h4 {
      font-size: 23px;
@@ -160,22 +144,7 @@ body {
      margin-left: 1rem;
      font-family: "Barlow";
 }
- .text-block-1 p {
-     margin-left: 1rem;
-     font-family: "Open Sans";
-     color: #4e4e52;
-}
- .text-block-2 p {
-     margin-left: 1rem;
-     font-family: "Open Sans";
-     color: #4e4e52;
-}
- .text-block-3 p {
-     margin-left: 1rem;
-     font-family: "Open Sans";
-     color: #4e4e52;
-}
- .text-block-4 p {
+ .text-block-1 p, .text-block-2 p, .text-block-3 p, .text-block-4 p {
      margin-left: 1rem;
      font-family: "Open Sans";
      color: #4e4e52;
@@ -205,42 +174,20 @@ body {
      height: 200px;
      object-fit: cover;
 }
- .text-block-5 {
-     background-color: #83b7ee;
+ .text-block-5, .text-block-6, .text-block-7 {
      width: 180px;
      height: 200px;
+}
+ .text-block-5 {
+     background-color: #83b7ee;
 }
  .text-block-6 {
      background-color: #d4a35a;
-     width: 180px;
-     height: 200px;
 }
  .text-block-7 {
      background-color: #63afbb;
-     width: 180px;
-     height: 200px;
 }
- .text-block-5 p {
-     text-align: center;
-     margin-top: 2rem;
-     font-family: "Helvetica";
-     color: white;
-     line-height: 1.6;
-     margin-top: 4.3rem;
-     font-size: 1.2rem;
-     font-weight: bold;
-}
- .text-block-6 p {
-     text-align: center;
-     margin-top: 2rem;
-     font-family: "Helvetica";
-     color: white;
-     line-height: 1.6;
-     margin-top: 4.3rem;
-     font-size: 1.2rem;
-     font-weight: bold;
-}
- .text-block-7 p {
+ .text-block-5 p, .text-block-6 p, .text-block-7 p {
      text-align: center;
      margin-top: 2rem;
      font-family: "Helvetica";
@@ -257,3 +204,13 @@ body {
      margin-left: 29rem;
      margin-top: 1rem;
 }
+ .text-cards .text-block-5, .text-cards img, .text-cards .text-block-6, .text-cards .text-block-7 {
+     transition: transform 0.3s ease;
+     user-select: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+}
+ .text-cards .text-block-5:hover, .text-cards img:hover, .text-cards .text-block-6:hover, .text-cards .text-block-7:hover {
+     transform: scale(1.1);
+}
+ 

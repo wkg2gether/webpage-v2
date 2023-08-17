@@ -2,22 +2,19 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
  body {
-    margin: 0;
-    font-family: "Barlow";
-    background-color: #141416;
+     margin: 0;
+     font-family: "Barlow";
+     background-color: #141416;
 }
-
-.page-wrapper {
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out; 
-  }
-
+ .page-wrapper {
+     opacity: 0;
+     transition: opacity 0.8s ease-in-out;
+}
  .business {
      background-image: url(../img/solutions-background.png);
      background-size: cover;
      padding: 3rem 1.25px;
 }
-
  .business h2 {
      color: white;
      margin-top: 8rem;
@@ -29,7 +26,6 @@
  .business p {
      font-size: 2rem;
 }
-
  table, td, tr {
      margin-top: 0.3rem;
      margin-left: 6rem;
@@ -44,15 +40,12 @@
      margin-left: 35%;
      opacity: 0;
 }
-
  .data-management img, .support img {
      background-color: #83b7ee;
 }
-
  .custom-app img, .software img {
      background-color: #d4a35a;
 }
-
  .software-description h2, .data-management h2, .custom-app h2, .support h2{
      font-family: "Poppins";
      color: white;
@@ -62,7 +55,6 @@
      font-size: 1.3rem;
      opacity: 0;
 }
-
  .software-description p, .data-management p, .custom-app p, .support p {
      font-family: "Open Sans";
      margin-left: 4rem;
@@ -70,38 +62,31 @@
      color: #8A8A8A;
      opacity: 0;
 }
-
  .software-description td {
      width: 100%;
 }
-
  .smaller {
      width: 20%;
 }
- 
-.software-description, .management, .application-development, .customer-support {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .slide-in-left {
-    transform: translateX(-100%);
-    animation: slide-in 1.5s forwards; 
-  }
-
-  @keyframes slide-in {
-    to {
-      transform: translateX(0); 
+ .software-description, .management, .application-development, .customer-support {
+     position: relative;
+     overflow: hidden;
+}
+ .slide-in-left {
+     transform: translateX(-100%);
+     animation: slide-in 1.5s forwards;
+}
+ @keyframes slide-in {
+     to {
+         transform: translateX(0);
     }
-  }
-
-  .slide-in-bottom {
-    transform: translateY(40%);
-    animation: slide-in 1.5s forwards; 
-  }
-
-  @keyframes slide-in {
-    to {
-      transform: translateY(0); 
+}
+ .slide-in-bottom {
+     transform: translateY(40%);
+     animation: slide-in 1.5s forwards;
+}
+ @keyframes slide-in {
+     to {
+         transform: translateY(0);
     }
-  }
+}

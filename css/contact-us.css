@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
+ body {
+     margin: 0;
+     font-family: "Barlow";
+     background-color: #141416;
+}
+ /* .page-wrapper {
+     opacity: 0;
+     transition: opacity 0.8s ease-in-out;
+} */
+ .startup {
+     background: url(../img/nnnnnnnnnnn.png);
+     background-size: cover;
+     padding: 4rem 0;
+     background-position-y: -90%;
+     filter: saturate(130%);
+     filter: grayscale(15%);
+}
+ .startup h2 {
+     color: white;
+     margin-top: 8rem;
+     margin-left: 4rem;
+     font-family: "Poppins";
+     font-size: 4rem;
+     font-weight: bold;
+}
+ .startup p {
+     font-size: 2rem;
+}

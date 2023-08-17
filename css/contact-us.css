@@ -6,10 +6,10 @@
      font-family: "Barlow";
      background-color: #141416;
 }
-  /* .page-wrapper {
+  .page-wrapper {
      opacity: 0;
      transition: opacity 0.8s ease-in-out;
-}  */
+} 
 
  .startup {
      background: url(../img/contact-us.png);

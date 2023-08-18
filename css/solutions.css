@@ -5,6 +5,7 @@
      margin: 0;
      font-family: "Barlow";
      background-color: #141416;
+     overflow-x: hidden;
 }
  .page-wrapper {
      opacity: 0;

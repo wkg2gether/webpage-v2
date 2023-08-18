@@ -5,6 +5,7 @@
      margin: 0;
      font-family: "Barlow";
      background: linear-gradient( to bottom, #1a1a1c 0%, #1a1a1c 40%, #141416 40%, #141416 100% );
+     overflow-x: hidden;
 }
  .page-wrapper {
      opacity: 0;

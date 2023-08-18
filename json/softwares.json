@@ -1,0 +1,23 @@
+[
+    {
+    "title": "Cloud Analytics For Beginners",
+    "period": "2weeks",
+    "description": "Describe your program here. Why should people join? Use short catchy text to tell people how they can benefit from participating. A great description makes people more likely to join your program.",
+    "price": "RON 80.00",
+    "image": "../img/cloud-analytics.webp"
+    },
+    {
+    "title": "Data Analytics Tools",
+    "period": "4 weeks",
+    "description": "Describe your program here. Why should people join? Use short catchy text to tell people how they can benefit from participating. A great description makes people more likely to join your program.",
+    "price": "RON 120.00",
+    "image": "../img/data-analytics.webp"
+    },
+    {
+    "title": "Data-driven Decision Making",
+    "period": "8 weeks",
+    "description": "Describe your program here. Why should people join? Use short catchy text to tell people how they can benefit from participating. A great description makes people more likely to join your program.",
+    "price": "RON 150.00",
+    "image": "../img/data-driven.webp"
+    }
+]

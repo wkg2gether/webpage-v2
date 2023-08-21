@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     //page fade-out animation
     $("a").click(function(e) {
+        if($(e.target).attr("href") == undefined || $(e.target).attr("href") == window.location.pathname.split("/").pop() != "index.html") return;
         e.preventDefault();
         $(".page-wrapper").css("opacity", 0);
         setTimeout(function() {

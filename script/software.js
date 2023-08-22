@@ -7,9 +7,10 @@ $(document).ready(async function(){
     let desc = $(".header-period");
     let img = $(".header-image img");
 
-    title.text(data[0].title);
-    desc.text(data[0].period);
-    img.attr("src", data[0].image);
+    var number = 0;
+    title.text(data[number].title);
+    desc.text(data[number].period);
+    img.attr("src", data[number].image);
 
 } catch (error) {
     console.error(error)

@@ -20,9 +20,15 @@ $(document).ready(function() {
         if (newScroll > scroll + 10) {
             var opacity = Math.max(0, 1 - (newScroll - scroll) / 10);
             $(".header").css("opacity", opacity);
+            $(".panel").css("opacity", opacity);
+            $(".panel").css("transition", "opacity 0.5s ease-in-out");
         } else if (newScroll < scroll - 10) {
             var opacity = Math.min(1, 0.4 + (scroll - newScroll) / 10);
             $(".header").css("opacity", opacity);
+            $(".panel").css("opacity", opacity);
+            setTimeout(function() {
+                $(".panel").css("transition", "right 1s");
+            }, 500);
         }
         scroll = newScroll;
     });
@@ -39,4 +45,9 @@ $(document).ready(function() {
             });
         }
     });
+
+        $("#hamburger").click(function () {
+          $(this).toggleClass("open");
+          $("#panel").toggleClass("open");
+        });
 });

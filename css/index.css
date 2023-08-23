@@ -269,80 +269,30 @@
            margin: 0 2rem;
      }
 
-     .short-desc {
-          margin-top: 15rem;
-          font-size: 1.8rem;
-          color: white;
-          text-align: center;
-          font-weight: bold;
-          padding: 5%;
-          justify-content: center;
-          align-items: center;
-          line-height: 1;
-          font-family: "Poppins";
-     }
-  
+     .cards {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        background-color: #1a1a1c;
+   }
+
+    .column{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+   }
+
+ 
+   
       .team .content h2 {
           margin-top: 22rem;
           font-size: 1.8rem;
-      }
-  
-      .text-cards {
-          grid-template-columns: repeat(3, 1fr);
-          column-gap: 0.5rem;
-          margin-left: 1.5rem;
-          margin-right: 1.5rem;
-          margin-top: 2rem;
-      }
-  
-      .text-cards img {
-          width: 100%;
-          height: 2rem;
-      }
-  
-      .text-block-5,
-      .text-block-6,
-      .text-block-7 {
-          width: 100%;
-          height: 2rem;
-      }
-  
-      .text-block-5 p,
-      .text-block-6 p,
-      .text-block-7 p {
-          margin-top: 1rem;
-          font-size: 1rem;
-      }
-  
-      .read-more {
-          margin-left: 1.5rem;
-          margin-top: 0.5rem;
-      }
-  
-      .text-block-5,
-      .text-block-6,
-      .text-block-7,
-      .text-cards img {
-          transition: transform 0.3s ease-in-out;
-      }
-  
-      .text-block-5:hover,
-      .text-block-6:hover,
-      .text-block-7:hover,
-      .text-cards img:hover {
-          transform: scale(1.03);
       }
   
       .team .content {
           margin-left: 2.5rem;
           margin-right: 2.5rem;
       }
-  
-      .column .imageBox {
-          margin-left: 1.5rem;
-      }
-
-
    }
    
  

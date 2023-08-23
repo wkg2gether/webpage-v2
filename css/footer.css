@@ -118,50 +118,74 @@ footer {
     padding: 7rem 1rem;
   }
   .footer-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 10px auto;
+    grid-template-columns: repeat(1, 1fr);
   }
+
   .footer-info {
-    margin-top: 1.2rem;
-    justify-content: center;
-    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
   }
-  .footer-section {
-    margin-bottom: 2rem;
-  }
+
   .footer-section .company-name {
     font-size: 1.4rem;
+    text-align: center;
   }
   .footer-section .company-description {
     font-size: 1rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
+
   .footer-section p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .footer-section i {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .footer-section span {
-    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
   }
+  
   .footer-section .footer-logo {
     width: 3rem;
   }
-  .href-buttons {
-    margin-left: auto;
-    margin-right: auto;
-    }
   
+  .href-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .href-buttons a,
+  .href-buttons button {
+    margin: 0.5rem; 
+  }
+
   .href-buttons button {
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
+    display: flex;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   #buttons {
     margin-left: 0;
   }
+
   #social {
+    margin-top: 10rem;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    }
+  }
 }

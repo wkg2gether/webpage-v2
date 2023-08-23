@@ -95,23 +95,3 @@
          transform: translateY(0);
     }
 }
-
-@media screen and (max-width: 1000px) {
-    .business {
-        background-image: url(../img/solutions-background.png);
-        background-size: cover;
-        padding: 3rem 1.25px;
-   }
-    .business h2 {
-        color: white;
-        margin-top: 4rem;
-        margin-left: 4rem;
-        font-family: "Poppins";
-        font-size: 4rem;
-        font-weight: bold;
-   }
-    .business p {
-        font-size: 2rem;
-   }
-
-}

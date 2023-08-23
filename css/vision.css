@@ -42,6 +42,13 @@
      font-size: 1.2rem;
      font-family: "Open sans";
 }
+.table-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #141416;
+    width: 100%;
+}
  .table-story, .table-leadership {
      position: relative;
      top: -2%;
@@ -49,13 +56,6 @@
      display: flex;
      z-index: 2;
      background-color: inherit;
-}
- .table-row {
-     display: flex;
-     flex-direction: row;
-     align-items: flex-start;
-     background-color: #141416;
-     width: 100%;
 }
  .story-title, .leadership-title {
      flex: 2.7;
@@ -96,3 +96,68 @@
      background-size: repeat;
 }
  
+@media screen and (max-width: 1000px) {
+    .header-img {
+        height: 32rem;
+   }
+    .header-title, .header-description {
+        left: 4%;
+   }
+    .header-title {
+        top: 13.5rem;
+        font-size: 3rem;
+   }
+    .header-description {
+        top: 19rem;
+        font-size: 0.9rem;
+   }
+
+   .table-row {
+    flex-direction: column;
+   }
+
+   .table-story, .table-leadership {
+    top: -2%;
+    padding: 0 1rem;
+   }
+
+    .story-title, .leadership-title {
+     width: 100%;
+    }
+
+    .story-title p, .leadership-title p {
+        margin: 5%;
+   }
+
+    .story-desc, .leadership-desc {
+    width: 100%;
+    }    
+
+    .story-desc br, .leadership-desc br {
+        display: none;
+    }
+
+    .leadership-title br {
+        display: none;
+    }
+
+    .story-desc p, .leadership-desc p {
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 2.8vw;
+   }
+   
+   .leadership-desc {
+    order: 2;
+   }
+
+    .leadership-title {
+     order: 1;
+    }
+
+    .story-title, .leadership-title {
+        background-position: center;
+   }
+
+
+}

@@ -10,28 +10,24 @@ footer {
   padding: 7rem 2rem;
   background-color: #141416;
 }
-
 .footer-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 1px auto;
   grid-gap: 1rem;
 }
-
 .footer-section {
   min-height: auto;
   max-height: none;
   display: flex;
   flex-direction: column;
 }
-
 #buttons {
   margin-left: 11rem;
 }
 #social {
   margin-left: 13rem;
 }
-
 .href-buttons button {
   background-color: #83B7EE;
   font-family: "Open sans";
@@ -44,7 +40,6 @@ footer {
   transition: all 0.3s ease-in-out;
   margin-top: 1.7rem;
 }
-
 .href-buttons button:hover {
   background-color: inherit;
   color: #ffffff;
@@ -52,13 +47,11 @@ footer {
   border-style: solid;
   border-width: 1px;
 }
-
 .href-buttons {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .href-buttons a {
   margin-bottom: 1rem;
   text-decoration: none;
@@ -67,7 +60,6 @@ footer {
   font-size: 1.2rem;
   font-weight: 400;
 }
-
 .footer-section .company-name {
   font-family: "Barlow";
   font-size: 1.6rem;
@@ -76,7 +68,6 @@ footer {
   color: #ffffff;
   cursor: pointer;
 }
-
 .footer-section .company-description {
   font-family: "Open Sans";
   color: #808080;
@@ -86,7 +77,6 @@ footer {
   font-size: 1.1rem;
   color: #808080;
 }
-
 .footer-section i {
   font-size: 1.5rem;
   color: #808080;
@@ -103,89 +93,74 @@ footer {
   width: 3rem;
   height: auto;
 }
-
 .footer-info {
-  margin-top: 9rem; 
+  margin-top: 9rem;
 }
-
 .social-icons {
   display: flex;
   gap: 0.3rem;
 }
-
 @media screen and (max-width: 1000px) {
   footer {
-    padding: 7rem 1rem;
-  }
+      padding: 7rem 1rem;
+ }
   .footer-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
+      grid-template-columns: repeat(1, 1fr);
+ }
   .footer-info {
-    margin-top: 3rem;
-    text-align: center;
-  }
-
+      margin-top: 3rem;
+      text-align: center;
+ }
   .footer-section .company-name {
-    font-size: 1.4rem;
-    text-align: center;
-  }
+      font-size: 1.4rem;
+      text-align: center;
+ }
   .footer-section .company-description {
-    font-size: 1rem;
-    margin-top: -2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
+      font-size: 1rem;
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+ }
   .footer-section p {
-    font-size: 1.3rem;
-  }
+      font-size: 1.3rem;
+ }
   .footer-section i {
-    font-size: 1.8rem;
-  }
+      font-size: 1.8rem;
+ }
   .footer-section span {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-  }
-  
+      margin-top: 1rem;
+      font-size: 0.9rem;
+ }
   .footer-section .footer-logo {
-    width: 3rem;
-  }
-  
+      width: 3rem;
+ }
   .href-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .href-buttons a,
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+ }
+  .href-buttons a, .href-buttons button {
+      margin: 0.5rem;
+ }
   .href-buttons button {
-    margin: 0.5rem; 
-  }
-
-  .href-buttons button {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-    display: flex;
-  }
-
+      padding: 0.8rem 1.5rem;
+      font-size: 0.9rem;
+      display: flex;
+ }
   .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+ }
   #buttons {
-    margin-left: 0;
-  }
-
+      margin-left: 0;
+ }
   #social {
-    margin-top: 10rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+      margin-top: 10rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+ }
 }

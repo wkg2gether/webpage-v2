@@ -26,6 +26,7 @@ $(document).ready(function() {
             var opacity = Math.min(1, 0.4 + (scroll - newScroll) / 10);
             $(".header").css("opacity", opacity);
             $(".panel").css("opacity", opacity);
+            $(".panel").css("transition", "opacity 0.5s ease-in-out");
             setTimeout(function() {
                 $(".panel").css("transition", "right 1s");
             }, 500);
@@ -34,7 +35,7 @@ $(document).ready(function() {
     });
 
     //footer button (scroll to top or go to index.html)
-    $(".company-name").click(function() {
+    $("footer .company-name").click(function() {
         if (window.location.pathname.split("/").pop() != "index.html") {
             window.location.href = "index.html";
         } else {

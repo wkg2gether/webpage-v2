@@ -229,6 +229,50 @@
      transform: scale(1.1);
 }
 
+@media screen and (max-width: 1450px) {
+
+    body {
+        background: linear-gradient( to bottom, #1a1a1c 0%, #1a1a1c 30%, #141416 30%, #141416 100% );
+   }
+
+    .cards {
+        justify-content: center;
+        background-color: #1a1a1c;
+        padding: 10rem 0;
+   }
+
+    .column{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8rem;
+        margin-top: -4rem;
+   }
+    .column .imageBox {
+        margin-left: 0.5rem;
+        width: 16rem;
+   }
+    .text-block-1, .text-block-2, .text-block-3, .text-block-4 {
+        width: 17rem;
+   }
+    .text-block-1 {
+        margin-top: 18rem;
+        margin-left: 0;
+   }
+    .text-block-2 {
+        margin-top: 44rem;
+        margin-left: 0;
+   }
+    .text-block-3 {
+        position: absolute;
+        margin-top: 18rem;
+        margin-left: 24.5rem;
+   }
+    .text-block-4 {
+        position: absolute;
+        margin-top: 44rem;
+        margin-left: 24.5rem;
+   }
+}
+
  @media screen and (max-width: 1000px) {
      body {
          background: linear-gradient( to bottom, #1a1a1c 0%, #1a1a1c 25%, #141416 25%, #141416 100% );
@@ -290,43 +334,14 @@
          background-color: #1a1a1c;
          padding: 10rem 0;
     }
-     .column{
-         grid-template-columns: repeat(2, 1fr);
-         gap: 8rem;
-         margin-top: -4rem;
-    }
-     .column .imageBox {
-         margin-left: 0.5rem;
-         width: 16rem;
-    }
-     .text-block-1, .text-block-2, .text-block-3, .text-block-4 {
-         width: 17rem;
-    }
-     .text-block-1 {
-         margin-top: 18rem;
-         margin-left: 0;
-    }
-     .text-block-2 {
-         margin-top: 44rem;
-         margin-left: 0;
-    }
-     .text-block-3 {
-         position: absolute;
-         margin-top: 18rem;
-         margin-left: 24.5rem;
-    }
-     .text-block-4 {
-         position: absolute;
-         margin-top: 44rem;
-         margin-left: 24.5rem;
-    }
      .team .content h2 {
          margin-top: 22rem;
          font-size: 1.8rem;
     }
      .team .content {
          text-align: justify;
-         margin-left: 0;
+         margin-left: 3rem;
+         margin-right: 3rem;
     }
      .our-directions {
          font-size: 1.8rem;
@@ -353,6 +368,7 @@
          margin-left: 2vw;
     }
 }
+
  @media screen and (max-width: 750px) {
      .column{
          grid-template-columns: repeat(1, 1fr);

@@ -52,7 +52,7 @@
  .table-story, .table-leadership {
      position: relative;
      top: -2%;
-     padding: 0 4.6rem;
+     padding: 0 4.5rem;
      display: flex;
      z-index: 2;
      background-color: inherit;
@@ -69,16 +69,24 @@
      font-size: 2rem;
      transition: "background-position-x ease-in" 
 }
- .story-title p, .leadership-title p {
-     margin-top: 35% 
+
+.story-title p, .leadership-title p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
- .story-desc p, .leadership-desc p {
-     margin-top: 10%;
-     margin-left: 30%;
+
+.story-desc p,
+.leadership-desc p {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%; 
+    margin: 0;
 }
+
  .story-desc, .leadership-desc {
      flex: 4;
-     padding: 1.5rem;
      border: 0.1px solid #3F4349;
      color: #808080;
      height: 40rem;
@@ -87,6 +95,7 @@
      font-size: 1rem;
      line-height: 1.8;
 }
+
  .story-title {
      background-image: url("../img/vision-story-img.webp");
      background-size: repeat;
@@ -95,6 +104,8 @@
      background-image: url("../img/vision-lead-img.webp");
      background-size: repeat;
 }
+
+
  @media screen and (max-width: 1000px) {
      .header-img {
          height: 32rem;
@@ -122,6 +133,7 @@
     }
      .story-title p, .leadership-title p {
          margin: 5%;
+         margin-top: 1%;
     }
      .story-desc, .leadership-desc {
          width: 100%;
@@ -133,9 +145,8 @@
          display: none;
     }
      .story-desc p, .leadership-desc p {
-         margin-top: 6%;
-         margin-left: 5%;
-         font-size: 0.8rem;
+        padding: 2rem;
+         font-size: 1rem;
     }
      .leadership-desc {
          order: 2;

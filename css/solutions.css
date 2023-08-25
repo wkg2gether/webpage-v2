@@ -11,22 +11,34 @@
      opacity: 0;
      transition: opacity 0.8s ease-in-out;
 }
- .business {
-     background-image: url(../img/solutions-background.png);
-     background-size: cover;
-     padding: 3rem 1.25px;
+.business {
+    background-image: url(../img/solutions-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 3rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-height: 65vh;
 }
- .business h2 {
-     color: white;
-     margin-top: 8rem;
-     margin-left: 4rem;
-     font-family: "Poppins";
-     font-size: 4rem;
-     font-weight: bold;
+
+.business h2 {
+    color: white;
+    margin-top: 13rem;
+    margin-left: 4rem;
+    font-family: "Poppins";
+    font-size: 4rem;
+    font-weight: bold;
 }
- .business p {
-     font-size: 2rem;
+
+.business p {
+    margin-top: -10rem;
+    font-size: 2rem;
+    color: white;
 }
+
  table, td, tr {
      margin-top: 0.3rem;
      margin-left: 6rem;
@@ -34,17 +46,20 @@
      border: 1px solid;
      height: 10rem;
 }
- .software img, .data-management img, .custom-app img, .support img {
-     border-radius: 15px;
-     padding: 1.5rem;
-     width: 30%;
-     margin-left: 35%;
-     opacity: 0;
-     pointer-events: none;
-     user-select: none; 
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
+    .software img, .data-management img, .custom-app img, .support img {
+        border-radius: 15px;
+        padding: 1.5rem;
+        max-width: 100%;
+        width: 12vh;
+        height: auto;
+        margin-left: 32%;
+        opacity: 0;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+    }
+
  .data-management img, .support img {
      background-color: #83b7ee;
 }
@@ -94,4 +109,64 @@
      to {
          transform: translateY(0);
     }
+}
+
+@media screen and (max-width: 1000px) {
+    .business h2 {
+        margin-top: 4rem;
+        margin-left: 2rem;
+        font-size: 3rem;
+    }
+    .business p {
+        font-size: 1.5rem;
+        margin-top: -2rem;
+    }
+
+    table, td, tr {
+        margin-top: 0.3rem;
+        margin-left: 1rem;
+        border-color: rgb(255, 255, 255);
+        border: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    tr {
+        border-color: rgb(255, 255, 255);
+        border: 1px solid;
+    }
+    .software img, .data-management img, .custom-app img, .support img {
+        width: 100%;
+        opacity: 0;
+        margin-left: 180%;
+        margin-top: 2rem;
+        width: 12vh;
+        height: auto;
+   }
+    .software-description h2, .data-management h2, .custom-app h2, .support h2{
+        margin-left: 0;
+    }
+    .software-description p, .data-management p, .custom-app p, .support p {
+        font-family: "Open Sans";
+        margin-left: 0;
+        margin-bottom: 4rem;
+        color: #8A8A8A;
+        opacity: 0;
+    }
+    .slide-in-left {
+        transform: translateX(-100%);
+        animation: slide-in 1.5s forwards;
+    }
+
+    .slide-in-top {
+        transform: translateY(-70%);
+        animation: slide-in 1.5s forwards;
+    }
+    @keyframes slide-in {
+        to {
+            transform: translateX(0);
+       }
+   }
 }

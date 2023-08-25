@@ -4,8 +4,8 @@ $(document).ready(function() {
   // combine scroll event listeners
   $(window).scroll(function() {
       debounce(checkVisibility, 100);
-      headerImageAnimation();
   });
+
 
   // function to debounce scroll events
   var timeout;
@@ -22,6 +22,7 @@ $(document).ready(function() {
           var windowHeight = $(window).height();
           var scrollTop = $(window).scrollTop();
           var elementBottom = offsetTop + element.outerHeight();
+          var screenWidth = $(window).width();
 
           var isVisible = (offsetTop <= (scrollTop + windowHeight)) && (elementBottom >= scrollTop);
 
@@ -29,7 +30,7 @@ $(document).ready(function() {
               if (visibleElements.indexOf(element) === -1) {
                   element.css("opacity", "1");
                   if (element.is("img")) {
-                      element.addClass("slide-in-bottom");
+                        screenWidth < 1000 ? element.addClass("slide-in-top") : element.addClass("slide-in-left");
                   } else {
                       element.addClass("slide-in-left");
                   }
@@ -42,15 +43,17 @@ $(document).ready(function() {
           }
       });
   }
-
-  function headerImageAnimation() {
-      var scrollVision = $(window).scrollTop();
-      $(".business").css({
-          "background-size": (1 + scrollVision / 1500) * 100 + "%",
-          "background-position": "center " + (scrollVision / 10000) + "px"
-      });
-  }
-
   // initial check for visibility
   checkVisibility();
+});
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var scrollVision = $(window).scrollTop();
+        var backgroundPosition = "center " + (scrollVision / 2) + "px";
+
+        $(".business").css({
+            "background-position": backgroundPosition
+        });
+    });
 });

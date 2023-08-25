@@ -95,7 +95,6 @@
      font-size: 1rem;
      line-height: 1.8;
 }
-
  .story-title {
      background-image: url("../img/vision-story-img.webp");
      background-size: repeat;
@@ -155,6 +154,6 @@
          order: 1;
     }
      .story-title, .leadership-title {
-         background-position: center;
+         background-position: left;
     }
 }

@@ -15,9 +15,12 @@
  .startup {
      background: url(../img/contact-us.png);
      background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center top;
      padding: 7rem 0;
      filter: saturate(130%);
      filter: grayscale(15%);
+
 }
 
  .startup h2 {
@@ -120,4 +123,71 @@ input:hover {
     background-color: inherit;
     color: white;
     border: 1px solid white;
+}
+
+@media screen and (max-width: 1300px) {
+    table, td, tr {
+        margin-left: 1rem;
+        border: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    tr {
+        border-color: rgb(255, 255, 255);
+        border: 1px solid;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .startup h2 {
+        margin-top: 6rem;
+        margin-left: 1rem;
+        font-size: 2rem;
+   }
+   
+    .startup p {
+        font-size: 1.2rem;
+        margin-top: -4.5rem;
+   }
+
+   .startup br {
+    display: none;
+   }
+
+   .software p {
+    font-family: "Open Sans";
+    color: #8a8a8a;
+    font-size: 1rem;
+    text-align: left;
+    padding: 1.5rem;
+    transform: translateX(0%);
+}
+
+.software br {
+    display: none;
+}
+   form label {
+    font-family: "Open Sans";
+    font-size: 0.8rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+   form input[type="text"], form input[type="email"] {
+    width: 70%;
+}
+
+.button-container {
+    width: 67%;
+}
 }

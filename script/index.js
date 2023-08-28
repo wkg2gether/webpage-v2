@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //index image zoom in and out while scrolling
-    if (window.location.pathname.split("/").pop() == "index.html") {
+    if (window.location.pathname.split("/").pop() == "index.html" || !window.location.pathname.split("/").pop()) {
         var imageOffset = $(".background-img").offset().top;
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();

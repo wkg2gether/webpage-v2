@@ -1,6 +1,5 @@
 $(document).ready(function() {
     //index image zoom in and out while scrolling
-    if (window.location.pathname.split("/").pop() == "index.html" || !window.location.pathname.split("/").pop()) {
         var imageOffset = $(".background-img").offset().top;
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
@@ -11,7 +10,6 @@ $(document).ready(function() {
                 });
             }
         });
-    }
 
     //text-cards hover animation
     $(".text-cards .text-block-5, .text-cards .img, .text-cards .text-block-6, .text-cards .text-block-7").each(function() {

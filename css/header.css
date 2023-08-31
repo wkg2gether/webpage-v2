@@ -101,7 +101,7 @@
  .subpage-item:active{
      color:#729fce;
 }
- .header-button {
+ .btn {
      margin-right: 0.625rem;
      background: transparent;
      border-radius: 0.3rem;
@@ -115,12 +115,32 @@
      opacity: 0.6;
      transition: all 0.3s ease-in-out;
 }
- .header-button:hover{
+ .btn:hover {
      background-color: #d4a35a;
      color: black;
      opacity: 1;
      border: transparent;
 }
+.btn-secondary:focus {
+    background-color: #dfaa5a !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.dropdown-item:hover {
+    background-color: #3f4349;
+    color: #8a8a98;
+}
+
+.dropdown-menu {
+    background-color: #3f4349;
+}
+.dropdown-item {
+    color: white;
+}
+
+
+
  @media screen and (max-width: 1000px) {
      .header {
          padding: 1.25rem 0.625rem;

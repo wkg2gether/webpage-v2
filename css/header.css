@@ -159,6 +159,10 @@
          top: 5.2rem;
     }
 
+    .btn {
+        display: none;
+    }
+
      .mobile-subpages {
          display: flex;
          flex-direction: column;
@@ -225,4 +229,42 @@
          margin-bottom: 2rem;
          margin-top: 0.5rem;
     }
+
+    .mobile-btn {
+        margin-right: 0.625rem;
+        background: transparent;
+        border-radius: 0.3rem;
+        border-color: white;
+        color: white;
+        padding: 0.7em 1.5em;
+        position: relative;
+        font-family: "Open Sans";
+        font-size: 0.90rem;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: all 0.3s ease-in-out;
+   }
+    .btn:hover {
+        background-color: #d4a35a;
+        color: black;
+        opacity: 1;
+        border: transparent;
+   }
+   .btn-secondary:focus {
+       background-color: #dfaa5a !important;
+       border: 0 !important;
+       box-shadow: none !important;
+   }
+   
+   .dropdown-item:hover {
+       background-color: #3f4349;
+       color: #8a8a98;
+   }
+   
+   .dropdown-menu {
+       background-color: #3f4349;
+   }
+   .dropdown-item {
+       color: white;
+   }
 }

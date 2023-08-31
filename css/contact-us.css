@@ -7,11 +7,10 @@
      background-color: #141416;
      overflow-x: hidden;
 }
-  .page-wrapper {
+ .page-wrapper {
      opacity: 0;
      transition: opacity 0.8s ease-in-out;
-} 
-
+}
  .startup {
      background: url(../img/contact-us.png);
      background-size: cover;
@@ -20,9 +19,7 @@
      padding: 7rem 0;
      filter: saturate(130%);
      filter: grayscale(15%);
-
 }
-
  .startup h2 {
      color: white;
      margin-top: 6rem;
@@ -33,161 +30,139 @@
      font-weight: bold;
      margin-top: 3rem;
 }
-
  .startup p {
      font-size: 2rem;
      margin-top: 0rem;
 }
-
-table {
-    transform: translateY(-10%);
-    margin-left: 4rem;
-    background-color: #141416;
-    width: 93%;
+ table {
+     transform: translateY(-10%);
+     margin-left: 4rem;
+     background-color: #141416;
+     width: 93%;
 }
-
-table, td, tr {
-    border-color: rgb(255, 255, 255);
-    border: 1px solid;
+ table, td, tr {
+     border-color: rgb(255, 255, 255);
+     border: 1px solid;
 }
-
-.software p {
-    font-family: "Open Sans";
-    color: #8a8a8a;
-    font-size: 1rem;
-    text-align: left;
-    transform: translateX(30%);
+ .software p {
+     font-family: "Open Sans";
+     color: #8a8a8a;
+     font-size: 1rem;
+     text-align: left;
+     transform: translateX(30%);
 }
-
-form {
-    display: flex;
-    justify-content: space-between;
-    max-width: 580px;
-    margin: 0 auto;
-    padding: 1rem;
-    flex-wrap: wrap;
-    margin: 5rem auto;
+ form {
+     display: flex;
+     justify-content: space-between;
+     max-width: 580px;
+     margin: 0 auto;
+     padding: 1rem;
+     flex-wrap: wrap;
+     margin: 5rem auto;
 }
-
-.column {
-    flex: 1;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 0.8rem;
-    max-width: calc(100% - 1rem);
+ .column {
+     flex: 1;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     padding: 0.8rem;
+     max-width: calc(100% - 1rem);
 }
-
-form label {
-    font-family: "Open Sans";
-    color: #8a8a8a;
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+ form label {
+     font-family: "Open Sans";
+     color: #8a8a8a;
+     font-size: 0.8rem;
+     margin-bottom: 0.5rem;
 }
-
-form input[type="text"], form input[type="email"] {
-    border: 1px #8a8a8a solid;
-    border-radius: 6px;
-    background-color: transparent;
-    width: 100%;
-    height: 3.5rem;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
+ form input[type="text"], form input[type="email"] {
+     border: 1px #8a8a8a solid;
+     border-radius: 6px;
+     background-color: transparent;
+     width: 100%;
+     height: 3.5rem;
+     margin-bottom: 0.5rem;
+     padding: 0.5rem;
 }
-
-input:hover {
-    border: 1.5px #8a8a8a solid;
+ input:hover {
+     border: 1.5px #8a8a8a solid;
 }
-
-.button-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0.8rem;
+ .button-container {
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 0.8rem;
 }
-
-.button {
-    font-family: "Open Sans";
-    margin-left: 0.8rem;
-    font-size: 1rem;
-    width: 520px;
-    height: 3.5rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: #83B7EE;
-    color: #141416;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+ .button {
+     font-family: "Open Sans";
+     margin-left: 0.8rem;
+     font-size: 1rem;
+     width: 520px;
+     height: 3.5rem;
+     border-radius: 0.5rem;
+     border: none;
+     background-color: #83B7EE;
+     color: #141416;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
 }
-
-.button:hover {
-    background-color: inherit;
-    color: white;
-    border: 1px solid white;
+ .button:hover {
+     background-color: inherit;
+     color: white;
+     border: 1px solid white;
 }
-
-@media screen and (max-width: 1300px) {
-    table, td, tr {
-        margin-left: 1rem;
-        border: none;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+ @media screen and (max-width: 1300px) {
+     table, td, tr {
+         margin-left: 1rem;
+         border: none;
+         height: auto;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
     }
-
-    tr {
-        border-color: rgb(255, 255, 255);
-        border: 1px solid;
+     tr {
+         border-color: rgb(255, 255, 255);
+         border: 1px solid;
     }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: space-between;
-        margin: 0 auto;
-        flex-wrap: wrap;
+     form {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         justify-content: space-between;
+         margin: 0 auto;
+         flex-wrap: wrap;
     }
-
-    .startup h2 {
-        margin-top: 6rem;
-        margin-left: 1rem;
-        font-size: 2rem;
-   }
-   
-    .startup p {
-        font-size: 1.2rem;
-        margin-top: -4.5rem;
-   }
-
-   .startup br {
-    display: none;
-   }
-
-   .software p {
-    font-family: "Open Sans";
-    color: #8a8a8a;
-    font-size: 1rem;
-    text-align: left;
-    padding: 1.5rem;
-    transform: translateX(0%);
-}
-
-.software br {
-    display: none;
-}
-   form label {
-    font-family: "Open Sans";
-    font-size: 0.8rem;
-    text-align: left;
-    margin-bottom: 0.5rem;
-}
-
-   form input[type="text"], form input[type="email"] {
-    width: 70%;
-}
-
-.button-container {
-    width: 67%;
-}
+     .startup h2 {
+         margin-top: 6rem;
+         margin-left: 1rem;
+         font-size: 2rem;
+    }
+     .startup p {
+         font-size: 1.2rem;
+         margin-top: -4.5rem;
+    }
+     .startup br {
+         display: none;
+    }
+     .software p {
+         font-family: "Open Sans";
+         color: #8a8a8a;
+         font-size: 1rem;
+         text-align: left;
+         padding: 1.5rem;
+         transform: translateX(0%);
+    }
+     .software br {
+         display: none;
+    }
+     form label {
+         font-family: "Open Sans";
+         font-size: 0.8rem;
+         text-align: left;
+         margin-bottom: 0.5rem;
+    }
+     form input[type="text"], form input[type="email"] {
+         width: 70%;
+    }
+     .button-container {
+         width: 67%;
+    }
 }

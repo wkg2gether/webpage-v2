@@ -101,7 +101,7 @@
  .subpage-item:active{
      color:#729fce;
 }
- .btn {
+ #dropdownMenuLink {
      margin-right: 0.625rem;
      background: transparent;
      border-radius: 0.3rem;
@@ -115,30 +115,31 @@
      opacity: 0.6;
      transition: all 0.3s ease-in-out;
 }
- .btn:hover {
+ #dropdownMenuLink:hover {
+     text-decoration: none;
      background-color: #d4a35a;
      color: black;
      opacity: 1;
      border: transparent;
 }
-.btn-secondary:focus {
-    background-color: #dfaa5a !important;
-    border: 0 !important;
-    box-shadow: none !important;
+ .btn-secondary:focus {
+     text-decoration: none;
+     background-color: #d4a35a !important;
+     color: black !important;
+     opacity: 1 !important;
+     border: transparent !important;
 }
-
-.dropdown-item:hover {
-    background-color: #3f4349;
-    color: #8a8a98;
+ .dropdown-item:hover {
+     background-color: #1A1A1C;
+     color: #729fce;
+     font-weight: bold;
 }
-
-.dropdown-menu {
-    background-color: #3f4349;
+ .dropdown-menu {
+     background-color: #1A1A1C;
 }
-.dropdown-item {
-    color: white;
+ .dropdown-item {
+     color: white;
 }
-
  @media screen and (max-width: 1000px) {
      .header {
          padding: 1.25rem 0.625rem;
@@ -156,11 +157,9 @@
          display: flex;
          top: 5.2rem;
     }
-
-    .btn {
-        display: none;
+     .btn {
+         display: none;
     }
-
      .mobile-subpages {
          display: flex;
          flex-direction: column;
@@ -174,7 +173,6 @@
          z-index: 9998;
          overflow-y: auto;
     }
-
      .subpage-item {
          font-size: 1.5rem;
          font-weight: bold;
@@ -184,7 +182,6 @@
          margin-left: 1rem;
          margin-bottom: 0.8rem;
     }
-
      .subpage-item:hover{
          color: #729fce;
          transform: inherit;
@@ -193,29 +190,6 @@
     }
      .subpage-item:active{
          color:#729fce;
-    }
-     .mobile-header-button {
-         margin-right: 0.625rem;
-         background: transparent;
-         border-radius: 0.3rem;
-         border-color: white;
-         color: white;
-         padding: 0.7em 4em;
-         position: relative;
-         font-family: "Open Sans";
-         font-size: 1rem;
-         cursor: pointer;
-         opacity: 0.6;
-         transition: all 0.3s ease-in-out;
-         margin-left: 6.2rem;
-         margin-top: 2rem;
-         margin-bottom: 2rem;
-    }
-     .mobile-header-button:hover{
-         background-color: #d4a35a;
-         color: black;
-         opacity: 1;
-         border: transparent;
     }
      .divider {
          content: "";
@@ -227,42 +201,27 @@
          margin-bottom: 2rem;
          margin-top: 0.5rem;
     }
-
-    .mobile-btn {
-        margin-right: 0.625rem;
-        background: transparent;
-        border-radius: 0.3rem;
-        border-color: white;
-        color: white;
-        padding: 0.7em 1.5em;
-        position: relative;
-        font-family: "Open Sans";
-        font-size: 0.90rem;
-        cursor: pointer;
-        opacity: 0.6;
-        transition: all 0.3s ease-in-out;
-   }
-    .btn:hover {
-        background-color: #d4a35a;
-        color: black;
-        opacity: 1;
-        border: transparent;
-   }
-   .btn-secondary:focus {
-       background-color: #dfaa5a !important;
-       border: 0 !important;
-       box-shadow: none !important;
-   }
-   
-   .dropdown-item:hover {
-       background-color: #3f4349;
-       color: #8a8a98;
-   }
-   
-   .dropdown-menu {
-       background-color: #3f4349;
-   }
-   .dropdown-item {
-       color: white;
-   }
+     #dropdownMenuLink {
+         text-decoration: none;
+         border: 1px solid white;
+         padding: 0.7em 4em;
+         font-size: 1rem;
+         margin-left: 6rem;
+         margin-top: 2rem;
+         margin-bottom: 2rem;
+    }
+     .dropdown-item:hover {
+         text-decoration: none;
+    }
+     .dropdown {
+         margin-top: 1rem;
+         padding: 2rem 0;
+    }
+     .dropdown-menu {
+         padding-left: 3.2rem;
+         padding-right: 3.5rem;
+         margin-left: 2.4rem;
+         border-radius: 0.3rem;
+    }
 }
+ 

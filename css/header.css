@@ -139,8 +139,6 @@
     color: white;
 }
 
-
-
  @media screen and (max-width: 1000px) {
      .header {
          padding: 1.25rem 0.625rem;

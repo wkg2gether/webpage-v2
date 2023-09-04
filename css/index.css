@@ -217,6 +217,11 @@
      font-family: "Open Sans";
      margin-left: 25.5%;
      margin-top: 1rem;
+     
+}
+
+.read-more a {
+    color: #898989;
 }
  .text-block-5, .text-cards img, .text-block-6, .text-block-7 {
      transition: transform 0.3s ease;

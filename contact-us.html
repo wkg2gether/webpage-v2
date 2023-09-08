@@ -1,87 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-      <link rel="stylesheet" href="css/contact-us.css" />
-      <link rel="stylesheet" href="css/header.css" />
-      <link rel="stylesheet" href="css/footer.css" />
-      <title>TechTitans</title>
-   </head>
-   <header>
-      <div class="header">
-         <div class="logo">
-            <img src="img/logo.png" alt="Logo" />
-            <div class="company-name">Tech Titans</div>
-         </div>
-         <div class="subpages">
-            <a href="#" class="subpage-item" style="color: #729fce;">Home</a>
-            <a href="solutions.html" class="subpage-item">Solutions</a>
-            <a href="vision.html" class="subpage-item">Vision</a>
-            <a href="#" class="subpage-item">Software</a>
-            <!-- <a href="#" class="subpage-item">Blog</a> -->
-         </div>
-         <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle shadow-none btn-custom-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
-            Language
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#">EN</a>
-               <a class="dropdown-item" href="#">RU</a>
-               <a class="dropdown-item" href="#">RO</a>
-               <a class="dropdown-item" href="#">UA</a>
-            </div>
-         </div>
-         <div class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+   </script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="css/contact-us.css" />
+   <link rel="stylesheet" href="css/header.css" />
+   <link rel="stylesheet" href="css/footer.css" />
+   <title>TechTitans</title>
+</head>
+<header>
+   <div class="header">
+      <div class="logo">
+         <img src="img/logo.png" alt="Logo" />
+         <div class="company-name">Tech Titans</div>
+      </div>
+      <div class="subpages">
+         <a href="#" class="subpage-item" style="color: #729fce;">Home</a>
+         <a href="solutions.html" class="subpage-item">Solutions</a>
+         <a href="vision.html" class="subpage-item">Vision</a>
+         <a href="#" class="subpage-item">Software</a>
+         <!-- <a href="#" class="subpage-item">Blog</a> -->
+      </div>
+      <div class="dropdown">
+         <a class="btn btn-secondary dropdown-toggle shadow-none btn-custom-color" href="#" role="button"
+            id="dropdownMenuLink" data-toggle="dropdown">
+            <img src="img/globe.png" alt="Lang" />
+         </a>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#"><img src="img/gb.svg" width="20" height="15" alt=""> English</a>
+            <a class="dropdown-item" href="#"><img src="img/ru.svg" width="20" height="15" alt=""> Russian</a>
+            <a class="dropdown-item" href="#"><img src="img/md.svg" width="20" height="15" alt=""> Romanian</a>
+            <a class="dropdown-item" href="#"><img src="img/ua.svg" width="20" height="15" alt=""> Ukrainian</a>
          </div>
       </div>
-      <div class="panel" id="panel">
-         <div class="mobile-subpages">
-            <div>
-               <div class="dropdown">
-                  <a class="mobile-btn mobile-btn-secondary dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
-                     <img src="img/globe.png" alt="Lang" /> 
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                     <a class="dropdown-item" href="#"><img src="img/gb.svg" width="20" height="15" alt="">  English</a>
-               <a class="dropdown-item" href="#"><img src="img/ru.svg" width="20" height="15" alt="">  Russian</a>
-               <a class="dropdown-item" href="#"><img src="img/md.svg" width="20" height="15" alt="">  Romanian</a>
-               <a class="dropdown-item" href="#"><img src="img/ua.svg" width="20" height="15" alt="">  Ukrainian</a>
-                  </div>
+   </div>
+   <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+   </div>
+   </div>
+   <div class="panel" id="panel">
+      <div class="mobile-subpages">
+         <div>
+            <div class="dropdown">
+               <a class="mobile-btn mobile-btn-secondary dropdown-toggle " href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown">
+                  <img src="img/globe.png" alt="Lang" />
+               </a>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"><img src="img/gb.svg" width="20" height="15" alt=""> English</a>
+                  <a class="dropdown-item" href="#"><img src="img/ru.svg" width="20" height="15" alt=""> Russian</a>
+                  <a class="dropdown-item" href="#"><img src="img/md.svg" width="20" height="15" alt=""> Romanian</a>
+                  <a class="dropdown-item" href="#"><img src="img/ua.svg" width="20" height="15" alt=""> Ukrainian</a>
                </div>
             </div>
-            <div class="divider"></div>
-            <a href="#" class="subpage-item" style="color: #729fce;">Home</a>
-            <a href="solutions.html" class="subpage-item">Solutions</a>
-            <a href="vision.html" class="subpage-item">Vision</a>
-            <a href="software.html" class="subpage-item">Software</a>
-            <a href="#" class="subpage-item">Blog</a>
          </div>
+         <div class="divider"></div>
+         <a href="#" class="subpage-item" style="color: #729fce;">Home</a>
+         <a href="solutions.html" class="subpage-item">Solutions</a>
+         <a href="vision.html" class="subpage-item">Vision</a>
+         <a href="software.html" class="subpage-item">Software</a>
+         <a href="#" class="subpage-item">Blog</a>
       </div>
-   </header>
-   <body>
-      <div class="page-wrapper">
-    <section>
-        <div class="startup">
-           <h2>Empower Your Startup<h2>
-           <p>At Tech Titans, we provide<br>
-            innovative solutions for your<br>
-            business to thrive and scale.</p>
-        </div>
-     </section>
+   </div>
+</header>
 
-     <section>
-      <div class="software">
-         <table>
-            <tr class="software">
-                <td id="description">
-                    <p>As a software startup, we<br>
+<body>
+   <div class="page-wrapper">
+      <section>
+         <div class="startup">
+            <h2>Empower Your Startup<h2>
+                  <p>At Tech Titans, we provide<br>
+                     innovative solutions for your<br>
+                     business to thrive and scale.</p>
+         </div>
+      </section>
+
+      <section>
+         <div class="software">
+            <table>
+               <tr class="software">
+                  <td id="description">
+                     <p>As a software startup, we<br>
                         understand the challenges that<br>
                         come with building and<br>
                         growing a business. Our team<br>
@@ -90,69 +106,70 @@
                         edge technology and expert<br>
                         guidance. Contact us today to<br>
                         learn more.</p>
-                </td>
-                <td class="form">
-                    <form>
+                  </td>
+                  <td class="form">
+                     <form>
                         <div class="column">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="fname">
-        
-                            <label for="lname">Email</label>
-                            <input type="text" id="email" name="email">
-        
-                            <label for="email">Phone</label>
-                            <input type="text" id="phone" name="phone">
+                           <label for="fname">First Name</label>
+                           <input type="text" id="fname" name="fname">
+
+                           <label for="lname">Email</label>
+                           <input type="text" id="email" name="email">
+
+                           <label for="email">Phone</label>
+                           <input type="text" id="phone" name="phone">
                         </div>
                         <div class="column">
-                            <label for="company">Last Name</label>
-                            <input type="text" id="lname" name="lname">
-       
-                            <label for="phone">Company</label>
-                            <input type="text" id="company" name="company">
-        
-                            <label for="jobtitle">Job Title</label>
-                            <input type="text" id="jobtitle" name="jobtitle">
+                           <label for="company">Last Name</label>
+                           <input type="text" id="lname" name="lname">
+
+                           <label for="phone">Company</label>
+                           <input type="text" id="company" name="company">
+
+                           <label for="jobtitle">Job Title</label>
+                           <input type="text" id="jobtitle" name="jobtitle">
                         </div>
                         <div class="button-container">
-                            <button class="button">Send Message</button>
+                           <button class="button">Send Message</button>
                         </div>
-                    </form>
-                </td>
-            </tr>
-        </table>
-        
-      </div>
-     </section>
+                     </form>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </section>
    </div>
-   </body>
-   <footer>
-      <div class="footer-wrapper">
-         <div class="footer-section">
-            <p class="company-name"><img src="img/footer.png" alt="footer" class="footer-logo" />TechTitans</p>
-            <p class="company-description">Tut dannie dlya nashei company</p>
-         </div>
-         <div class="footer-section" id="buttons">
-            <div class="href-buttons">
-               <a href="solutions.html" class="footer-button">Solutions</a>
-               <a href="solutions.html" class="footer-button">Services</a>
-               <a href="vision.html" class="footer-button">About us</a>
-               <a href="#" class="footer-button">Blog</a>
-               <div class="footer-button">
-               </div>
-               <button onclick="window.location.href='contact-us.html';">Contact us</button>
+</body>
+<footer>
+   <div class="footer-wrapper">
+      <div class="footer-section">
+         <p class="company-name"><img src="img/footer.png" alt="footer" class="footer-logo" />TechTitans</p>
+         <p class="company-description">Tut dannie dlya nashei company</p>
+      </div>
+      <div class="footer-section" id="buttons">
+         <div class="href-buttons">
+            <a href="solutions.html" class="footer-button">Solutions</a>
+            <a href="solutions.html" class="footer-button">Services</a>
+            <a href="vision.html" class="footer-button">About us</a>
+            <a href="#" class="footer-button">Blog</a>
+            <div class="footer-button">
             </div>
-         </div>
-         <div class="footer-section"></div>
-         <div class="footer-section" id="social">
-            <p>Follow Us On:</p>
-            <div class="social-icons">
-            <i class="fab fa-linkedin"></i><i class="fab fa-facebook"></i><i class="fab fa-twitter"></i>
-            </div>
-            <span class="footer-info">© 2022 Tech Titans. All rights reserved.</span>
+            <button onclick="window.location.href='contact-us.html';">Contact us</button>
          </div>
       </div>
-   </footer>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="script/script.js"></script>
-   <script src="script/contact-us.js"></script>
+      <div class="footer-section"></div>
+      <div class="footer-section" id="social">
+         <p>Follow Us On:</p>
+         <div class="social-icons">
+            <i class="fab fa-linkedin"></i><i class="fab fa-facebook"></i><i class="fab fa-twitter"></i>
+         </div>
+         <span class="footer-info">© 2022 Tech Titans. All rights reserved.</span>
+      </div>
+   </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script/script.js"></script>
+<script src="script/contact-us.js"></script>
+
 </html>

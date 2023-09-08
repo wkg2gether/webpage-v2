@@ -79,7 +79,7 @@
  .subpages {
      display: flex;
      position: absolute;
-     right: 0rem;
+     right: -12rem;
      width: 37.5rem;
      text-decoration: none;
 }

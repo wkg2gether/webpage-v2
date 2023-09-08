@@ -130,6 +130,7 @@
      color: white;
      font-size: 1.1rem;
 }
+
  @media screen and (max-width: 1000px) {
      .header {
          padding: 1.25rem 0.625rem;
@@ -191,26 +192,26 @@
          margin-bottom: 2rem;
          margin-top: 0.5rem;
     }
+
      #dropdownMenuLink {
          text-decoration: none;
-         border: 1px solid white;
+         color: white;
+         border: 1px solid transparent;
          padding: 0.7em 4em;
          font-size: 1rem;
-         margin-left: 6rem;
+         margin-left: 7.6rem;
          margin-top: 2rem;
          margin-bottom: 2rem;
     }
-     .dropdown-item:hover {
-         text-decoration: none;
-    }
      .dropdown {
+        color: white;
          margin-top: 1rem;
          padding: 2rem 0;
     }
      .dropdown-menu {
          padding-left: 3.2rem;
          padding-right: 3.5rem;
-         margin-left: 2rem;
+         margin-left: -2.5rem;
          border-radius: 0.3rem;
     }
 }

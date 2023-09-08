@@ -100,35 +100,24 @@
 }
  .subpage-item:active{
      color:#729fce;
+ }
+ 
+.dropdown img {
+    color: white;
+    max-width: 1.8rem;
+    height: auto;
+    border: 0;
+    margin-bottom: 5px;
 }
- #dropdownMenuLink {
-     margin-right: 0.625rem;
-     background: transparent;
-     border-radius: 0.3rem;
-     border-color: white;
-     color: white;
-     padding: 0.7em 1.5em;
-     position: relative;
-     font-family: "Open Sans";
-     font-size: 0.90rem;
-     cursor: pointer;
-     opacity: 0.6;
-     transition: all 0.3s ease-in-out;
+.dropdown .btn {
+    background-color: rgb(20, 20, 22);
+    border: 0;
 }
- #dropdownMenuLink:hover {
-     text-decoration: none;
-     background-color: #d4a35a;
-     color: black;
-     opacity: 1;
-     border: transparent;
+
+.dropdown .btn:focus {
+    background-color: rgb(20, 20, 22);
 }
- .btn-secondary:focus {
-     text-decoration: none;
-     background-color: #d4a35a !important;
-     color: black !important;
-     opacity: 1 !important;
-     border: transparent !important;
-}
+
  .dropdown-item:hover {
      background-color: #1A1A1C;
      color: #729fce;
@@ -139,6 +128,7 @@
 }
  .dropdown-item {
      color: white;
+     font-size: 1.1rem;
 }
  @media screen and (max-width: 1000px) {
      .header {

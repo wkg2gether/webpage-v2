@@ -57,6 +57,7 @@
 }
  .company-name {
      font-weight: bold;
+     font-family: "Distroy23";
 }
  .logo {
      display: flex;

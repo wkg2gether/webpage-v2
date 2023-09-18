@@ -64,10 +64,11 @@
      align-items: center;
 }
  .logo img {
-     width: 3.7rem;
-     height: 2.7rem;
+     width: 4rem;
+     height: 4rem;
      margin-right: 0.625rem;
      margin-left: 0.625rem;
+     margin-bottom: 0.400rem;
      pointer-events: none;
 }
  .company-name {
